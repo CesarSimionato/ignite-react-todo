@@ -24,9 +24,8 @@ export const Main = styled.main`
 
   padding-left: ${({ theme }) => theme.PADDING.LAYOUT};
   padding-right: ${({ theme }) => theme.PADDING.LAYOUT};
+  padding-bottom: ${({ theme }) => theme.PADDING.LAYOUT};
 
   width: 100%;
-  max-width: calc(736px); 
   max-width: ${({ theme }) => `calc(736px + (2 * ${theme.PADDING.LAYOUT}))`}; 
-  height: 100%;
 `

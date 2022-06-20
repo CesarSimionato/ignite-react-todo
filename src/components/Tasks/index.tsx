@@ -1,5 +1,6 @@
 import { NoTasks } from "../NoTasks"
-import { Badge, Container, Header, Text } from "./styles"
+import { TaskCard } from "../TaskCard"
+import { Badge, Container, Header, TasksContainer, Text } from "./styles"
 
 export const Tasks: React.FC = () => {
   return (
@@ -16,7 +17,22 @@ export const Tasks: React.FC = () => {
         </div>
       </Header>
 
-      <NoTasks />
+      {/* <NoTasks /> */}
+
+      <TasksContainer>
+        <TaskCard />
+        <TaskCard isChecked />
+        <TaskCard />
+        <TaskCard />
+        <TaskCard isChecked />
+        <TaskCard />
+        <TaskCard />
+        <TaskCard isChecked />
+        <TaskCard />
+        <TaskCard />
+        <TaskCard isChecked />
+        <TaskCard />
+      </TasksContainer>
     </Container>
   )
 }

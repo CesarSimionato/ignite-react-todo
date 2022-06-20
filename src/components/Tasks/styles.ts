@@ -37,3 +37,11 @@ export const Badge = styled.span`
   color: ${({ theme }) => theme.COLORS.WHITE};
   font-size: ${({ theme }) => theme.SIZES.SM};
 `
+
+export const TasksContainer = styled.div`
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+`

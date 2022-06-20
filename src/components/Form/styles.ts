@@ -46,7 +46,7 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.COLORS.WHITE};
   
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color border-color 0.3s;
 
   font-weight: bold;
 
@@ -54,6 +54,7 @@ export const Button = styled.button`
 
   :hover {
     background-color: ${({ theme }) => theme.COLORS.PRIMARY_400};
+    border-color: ${({ theme }) => theme.COLORS.PRIMARY_400};
   }
 
   :focus {

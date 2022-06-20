@@ -12,6 +12,7 @@ export const Todo: React.FC = () => {
         <img
           src={logoImg}
           alt="Logo da plataforma Todo"
+          draggable={false}
         />
       </Header>
 
